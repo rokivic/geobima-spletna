@@ -1,0 +1,155 @@
+ html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          zoom: 125%;
+          height: 100vh;
+          position: relative;
+          overflow-x: hidden;
+          position: relative;
+          min-height: 100vh;
+        }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('../images/bauer.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: blur(4px) brightness(0.7); /* dejanska zameglitev slike */
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.2); /* rahlo potemnitev čez sliko */
+      z-index: -1;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    body {
+      background-image: url('../images/bauer.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      zoom: 125%;
+    }
+
+    h1 {
+      color: rgb(254, 254, 254);
+      text-align: center;
+    }
+
+    p {
+      color: rgb(254, 254, 254);
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(117, 126, 136);
+      padding: 10px 20px;
+      opacity: 0.9;
+    }
+
+    .navigacija1 {
+      background-color: rgb(117, 126, 136);
+      color: rgb(254, 254, 254);
+      padding: 10px;
+      font-size: 1.5em;
+      letter-spacing: 2px;
+      font-family: Impact, Helvetica, sans-serif;
+      float: left;
+      width: 50%;
+    }
+
+    .navigacija2 {
+      background-color: rgb(117, 126, 136);
+      color: rgb(254, 254, 254);
+      padding: 10px;
+      font-size: 1em;
+      letter-spacing: 2px;
+      font-family: Impact, Helvetica, sans-serif;
+      float: right;
+      width: 50%;
+      text-align: right;
+    }
+
+    .navigacija2 button {
+      background-color: rgb(117, 126, 136);
+      color: white;
+      border: none;
+      padding: 5px 5px;
+      margin-left: 10px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .navigacija2 button:hover {
+      background-color: white;
+      color: rgb(117, 126, 136);
+      transition: 0.3s ease;
+    }
+
+   
+    
+    table {
+      width: 100%;
+      max-width: 1200px;
+      border-collapse: collapse;
+      background-color: rgba(117, 126, 136, 0.9);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      margin: 20px auto;
+    }
+
+    th, td {
+      padding: 15px 20px;
+      text-align: left;
+      color: white;
+    }
+
+    th {
+      background-color: rgba(90, 100, 110, 0.95);
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    tr:not(:first-child):hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(117, 126, 136, 0.9);
+      color: white;
+    }

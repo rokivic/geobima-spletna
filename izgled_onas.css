@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  zoom: 125%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/bauer.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: blur(2px) brightness(0.7); /* manjši blur za boljšo ostrino */
+  z-index: -2;
+}
+
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(117, 126, 136);
+  padding: 10px 20px;
+  opacity: 0.9;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 5em;
+  letter-spacing: 4px;
+  font-family: Impact, 'Arial Narrow', sans-serif;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 4em;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 20px;
+  color: white;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigacija1 {
+  color: white;
+  font-size: 1.5em;
+  font-family: Impact, Helvetica, sans-serif;
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+.navigacija2 {
+  color: white;
+  font-size: 1em;
+  font-family: Impact, Helvetica, sans-serif;
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.navigacija2 button {
+  background-color: rgb(117, 126, 136);
+  color: white;
+  border: none;
+  padding: 5px 5px;
+  margin-left: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.navigacija2 button:hover {
+  background-color: white;
+  color: rgb(117, 126, 136);
+  transition: 0.3s ease;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(117, 126, 136);
+  color: white;
+  position: relative;
+  bottom: 0;
+  opacity: 0.9;
+}
+
+.technique-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  border-radius: 12px;
+}
+
+.technique-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.technique-section .text {
+  flex: 1 1 400px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.technique-section .text h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.technique-section .text p {
+  line-height: 1.6em;
+  margin: 0;
+  text-align: justify;
+}
+
+.technique-section .image {
+  flex: 0.8 0.8 200px;
+}
+
+.technique-section .image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.video-jetgrouting {
+  width: 100%;
+  max-width: 1000px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
