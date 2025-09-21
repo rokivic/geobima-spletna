@@ -15,7 +15,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/bauer.png');
+  background-image: url('../bauer.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -177,3 +177,4 @@ footer {
   display: block;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
 }
+
