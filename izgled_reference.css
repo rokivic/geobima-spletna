@@ -20,7 +20,7 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background-image: url('../images/bauer.png');
+      background-image: url('bauer.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -49,7 +49,7 @@
     }
 
     body {
-      background-image: url('../images/bauer.png');
+      background-image: url('bauer.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -152,4 +152,5 @@
       padding: 10px;
       background-color: rgba(117, 126, 136, 0.9);
       color: white;
+
     }
